@@ -56,11 +56,11 @@
             ];
           };
 
-          packages.default = pkgs.buildGo123Module {
+          packages.default = pkgs.buildGo124Module {
             inherit name;
             src = gitignore.lib.gitignoreSource ./.;
             env.CGO_ENABLED = 0;
-            vendorHash = "sha256-hscwOZhaVL17HPUGfs8uYSQt80D4HK4W6kNdkSmsQdA=";
+            vendorHash = "sha256-VywdZVE3D9XwWjgS7KZikVcQuz3xVJma2LLOYmYjU0Y=";
             flags = [ "-trimpath" ];
             ldflags = [
               "-s"
